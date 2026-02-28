@@ -10,7 +10,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/YOUR_USERNAME/devops-project.git'
+                git branch: 'main', url: 'https://github.com/JoyalBBiju/devops-Capstone-project'
             }
         }
 
