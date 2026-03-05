@@ -6,8 +6,7 @@ RUN npm install
 COPY . .
 
 # Stage 2 - Production
-FROM node:20-alpine
-RUN apk update && apk upgrade
+FROM node:18-alpine
 WORKDIR /app
 COPY --from=builder /app /app
 EXPOSE 3000
